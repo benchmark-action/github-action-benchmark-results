@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678112329293,
+  "lastUpdate": 1678112331367,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36259,6 +36259,42 @@ window.BENCHMARK_DATA = {
             "value": 24147.126123953203,
             "unit": "ns/iter",
             "extra": "iterations: 29027\ncpu: 24143.952182450823 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "k.trzesniewski@gmail.com",
+            "name": "Chris Trzesniewski",
+            "username": "ktrz"
+          },
+          "committer": {
+            "email": "k.trzesniewski@gmail.com",
+            "name": "Chris Trzesniewski",
+            "username": "ktrz"
+          },
+          "distinct": true,
+          "id": "220a02320fbf9ed2a4e84228530fa2024c285bcf",
+          "message": "fix: add summary-always parameter to action.yml",
+          "timestamp": "2023-03-06T15:17:19+01:00",
+          "tree_id": "981547bda54b3d64d578036164b472e39cbfe49e",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/220a02320fbf9ed2a4e84228530fa2024c285bcf"
+        },
+        "date": 1678112330098,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 215.64009563673713,
+            "unit": "ns/iter",
+            "extra": "iterations: 3248124\ncpu: 215.42213289886715 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 29101.319237665768,
+            "unit": "ns/iter",
+            "extra": "iterations: 23979\ncpu: 29089.15300888278 ns\nthreads: 1"
           }
         ]
       }
