@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1706110534953,
+  "lastUpdate": 1706110594242,
   "entries": {
     "Rust Benchmark": [
       {
@@ -41035,6 +41035,42 @@ window.BENCHMARK_DATA = {
             "value": 19975.342421216785,
             "unit": "ns/iter",
             "extra": "iterations: 35065\ncpu: 19974.361899329815 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "maria.inesparnisari@okta.com",
+            "name": "Maria Ines Parnisari",
+            "username": "miparnisari"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "036be2a998715b878d1dae2f88bd8ce86ca79ab7",
+          "message": "update to node 20 (#208)",
+          "timestamp": "2024-01-24T16:32:24+01:00",
+          "tree_id": "ca32c0dfe4c5cd2b4f64baa56a4081243b7fd211",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/036be2a998715b878d1dae2f88bd8ce86ca79ab7"
+        },
+        "date": 1706110592750,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 159.5663627380925,
+            "unit": "ns/iter",
+            "extra": "iterations: 4355848\ncpu: 159.5648195253829 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 19974.23706896549,
+            "unit": "ns/iter",
+            "extra": "iterations: 35032\ncpu: 19973.29869833296 ns\nthreads: 1"
           }
         ]
       }
