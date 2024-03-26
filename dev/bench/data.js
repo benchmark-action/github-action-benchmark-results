@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711450275235,
+  "lastUpdate": 1711450339314,
   "entries": {
     "Rust Benchmark": [
       {
@@ -53895,6 +53895,68 @@ window.BENCHMARK_DATA = {
             "value": 1976042355.4545352,
             "unit": "ops/s",
             "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          }
+        ]
+      }
+    ],
+    "Criterion.rs Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "k.trzesniewski@gmail.com",
+            "name": "Chris Trześniewski",
+            "username": "ktrz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6c4f1c31d68159af7621fe2f45c3c33b6e5fb95",
+          "message": "fix: 231 rust bench not comparing to baseline (#235)\n\n* sort jobs in ci workflows\r\n* add missing benches to ci jobs\r\n* rename CriterionRS bench to distinguish between default Rust and Criterion benchmarks",
+          "timestamp": "2024-03-26T11:49:09+01:00",
+          "tree_id": "208d89f1397b3417b9ca2008b8ac12caddb592eb",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/a6c4f1c31d68159af7621fe2f45c3c33b6e5fb95"
+        },
+        "date": 1711450337398,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 149,
+            "range": "± 19",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 18804,
+            "range": "± 2088",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 18809,
+            "range": "± 345",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 4,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 30435,
+            "range": "± 57",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 4,
+            "range": "± 0",
+            "unit": "ns/iter"
           }
         ]
       }
