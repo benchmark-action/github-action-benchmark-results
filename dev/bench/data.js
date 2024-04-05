@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1712046318599,
+  "lastUpdate": 1712304100392,
   "entries": {
     "Rust Benchmark": [
       {
@@ -39105,6 +39105,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004115838526509066",
             "extra": "mean: 1.616907264943481 msec\nrounds: 619"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "k.trzesniewski@gmail.com",
+            "name": "Chris Trześniewski",
+            "username": "ktrz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8e749722e912d8d81d0ef090f927695c58efcf5e",
+          "message": "chore: migrate extract tests to use snapshot testing (#236)\n\n* migrate extract tests to use snapshot testing\r\n* use proper json output files\r\n* use it.each where possible",
+          "timestamp": "2024-04-05T10:01:05+02:00",
+          "tree_id": "3a8eda2e525f4c6cd4ec74f71b26139d6d9549fe",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/8e749722e912d8d81d0ef090f927695c58efcf5e"
+        },
+        "date": 1712304098385,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 71877.17219607854,
+            "unit": "iter/sec",
+            "range": "stddev: 7.700635652776489e-7",
+            "extra": "mean: 13.912623012937031 usec\nrounds: 48312"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 625.5283019106789,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005344088226074003",
+            "extra": "mean: 1.5986486893486604 msec\nrounds: 676"
           }
         ]
       }
