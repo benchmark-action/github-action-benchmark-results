@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1718826634183,
+  "lastUpdate": 1718826636652,
   "entries": {
     "Rust Benchmark": [
       {
@@ -56527,6 +56527,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "org.openjdk.jmh.samples.JMHSample_01_HelloWorld.wellHelloThere",
             "value": 1977290250.107343,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sam@samxie.me",
+            "name": "Sam Xie",
+            "username": "XSAM"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8deacbb847d12b43252e0a2dca86f3e5b3cafb66",
+          "message": "Rename \"PR Summary\" into \"Job Summary\" (#252)",
+          "timestamp": "2024-06-19T21:49:25+02:00",
+          "tree_id": "0efa80f4aa96859083faa9f7dd24d7580956ceac",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/8deacbb847d12b43252e0a2dca86f3e5b3cafb66"
+        },
+        "date": 1718826632571,
+        "tool": "jmh",
+        "benches": [
+          {
+            "name": "org.openjdk.jmh.samples.JMHSample_01_HelloWorld.wellHelloThere",
+            "value": 1975823035.7365983,
             "unit": "ops/s",
             "extra": "iterations: 3\nforks: 1\nthreads: 1"
           }
