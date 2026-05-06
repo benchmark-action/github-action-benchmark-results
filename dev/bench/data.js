@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778061913516,
+  "lastUpdate": 1778061923002,
   "entries": {
     "Rust Benchmark": [
       {
@@ -44619,6 +44619,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000016593387154467717",
             "extra": "mean: 1.723645174957244 msec\nrounds: 583"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "k.trzesniewski@gmail.com",
+            "name": "Chris Trześniewski",
+            "username": "ktrz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "be6703b74d03447fdc7e72aa8cdee2cf6c4d1b66",
+          "message": "chore: add tracker config and ignore *.local files (#353)\n\n### Description\n\n- Add `.claude/tracker.yaml` declaring this repo as GitHub-tracker so\nClaude skills (plan-feature, create-pr, etc.) can dispatch correctly\nwithout per-invocation configuration. Schema documented in [the skills'\ntracker\nreference](https://github.com/ktrz/skills/blob/main/_shared/references/tracker.md).\n- Add `*.local` and `*.local.*` patterns to `.gitignore` so personal\noverrides like `.claude/settings.local.json` stay out of git.\n\n### Test scenario\n\n- [ ] `git check-ignore -v .claude/settings.local.json` reports\n`.gitignore:*.local.*` as the matching rule.\n- [ ] `cat .claude/tracker.yaml` shows the GitHub-typed config pointing\nat this repo.\n- [ ] No code paths affected — config-only change.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n\n## Summary by CodeRabbit\n\n* **Chores**\n  * Added tracker configuration for GitHub integration.\n* Updated `.gitignore` to exclude local configuration files (*.local and\n*.local.*).\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "timestamp": "2026-05-06T12:04:25+02:00",
+          "tree_id": "e0a6d6f7d9671d87923f3239aa6a8b2e62af91ae",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/be6703b74d03447fdc7e72aa8cdee2cf6c4d1b66"
+        },
+        "date": 1778061906074,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 76772.05956492832,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001332503806454525",
+            "extra": "mean: 13.02557213740334 usec\nrounds: 34670"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 625.0135014299835,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003852551982087232",
+            "extra": "mean: 1.5999654370858802 msec\nrounds: 604"
           }
         ]
       }
