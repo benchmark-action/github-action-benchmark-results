@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778059502622,
+  "lastUpdate": 1778059541152,
   "entries": {
     "Rust Benchmark": [
       {
@@ -62947,6 +62947,42 @@ window.BENCHMARK_DATA = {
             "value": 43.720927969767494,
             "unit": "ns",
             "range": "± 0.149348750520926"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5aa86d3751d5d96b950b38e568a0535dcd388ce3",
+          "message": "chore(deps-dev): bump flatted from 3.2.4 to 3.4.2 (#346)\n\nBumps [flatted](https://github.com/WebReflection/flatted) from 3.2.4 to\n3.4.2.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/3bf09091c3562e17a0647bc06710dd6097079cf7\"><code>3bf0909</code></a>\n3.4.2</li>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/885ddcc33cf9657caf38c57c7be45ae1c5272802\"><code>885ddcc</code></a>\nfix CWE-1321</li>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/0bdba705d130f00892b1b8fcc80cf4cdea0631e3\"><code>0bdba70</code></a>\nadded flatted-view to the benchmark</li>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/2a02dce7c641dec31194c67663f9b0b12e62da20\"><code>2a02dce</code></a>\n3.4.1</li>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/fba4e8f2e113665da275b19cd0f695f3d98e9416\"><code>fba4e8f</code></a>\nMerge pull request <a\nhref=\"https://redirect.github.com/WebReflection/flatted/issues/89\">#89</a>\nfrom WebReflection/python-fix</li>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/5fe86485e6df7f7f34a07a2a85498bd3e17384e7\"><code>5fe8648</code></a>\nadded &quot;when in Rome&quot; also a test for PHP</li>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/53517adbefe724fe472b2f9ebcdb01910d0ae3f0\"><code>53517ad</code></a>\nsome minor improvement</li>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/b3e2a0c387bf446435fec45ad7f05299f012346f\"><code>b3e2a0c</code></a>\nFixing recursion issue in Python too</li>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/c4b46dbcbf782326e54ea1b65d3ebb1dc7a23fad\"><code>c4b46db</code></a>\nAdd SECURITY.md for security policy and reporting</li>\n<li><a\nhref=\"https://github.com/WebReflection/flatted/commit/f86d071e0f70de5a7d8200198824a3f07fc9c988\"><code>f86d071</code></a>\nCreate dependabot.yml for version updates</li>\n<li>Additional commits viewable in <a\nhref=\"https://github.com/WebReflection/flatted/compare/v3.2.4...v3.4.2\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-05-06T11:23:30+02:00",
+          "tree_id": "2a6471e9b55c1d192618f835e004c058e1120da4",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/5aa86d3751d5d96b950b38e568a0535dcd388ce3"
+        },
+        "date": 1778059534038,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 22.018510228395463,
+            "unit": "ns",
+            "range": "± 0.06174009359909062"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.52852460741997,
+            "unit": "ns",
+            "range": "± 0.06989165470102035"
           }
         ]
       }
