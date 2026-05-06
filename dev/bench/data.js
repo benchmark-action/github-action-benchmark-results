@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778073461614,
+  "lastUpdate": 1778073469848,
   "entries": {
     "Rust Benchmark": [
       {
@@ -67127,6 +67127,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "org.openjdk.jmh.samples.JMHSample_01_HelloWorld.wellHelloThere",
             "value": 1815109957.9742591,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "k.trzesniewski@gmail.com",
+            "name": "Chris Trześniewski",
+            "username": "ktrz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "86d8bcf4dc945c81ee3547d15499abafc89a57b5",
+          "message": "fix(ci): eliminate race in validate script via single git history source (#354)\n\n### Description\n\n- Validate script (`scripts/ci_validate_modification.ts`) was failing on\nmaster with `Error: Number of diffs are incorrect. Exact 2 diffs are\nexpected` ([example failing\nrun](https://github.com/benchmark-action/github-action-benchmark/actions/runs/25428125480/job/74586926151)).\n- Root cause: race between two clones of the results repo.\n`before_data.js` was captured from one `actions/checkout` snapshot taken\nat T1; `after` came from a second clone the action makes internally at\nT4. Parallel workflows pushing to `gh-pages` between T1 and T4\nintroduced extra diffs, exceeding the strict `=== 2` assertion.\n- Fix: derive `before` and `after` from the **same** clone using `git\nshow HEAD~1:dev/bench/data.js` (parent of action's auto-commit) and `git\nshow HEAD:dev/bench/data.js`. Race window collapses to zero.\n- Drops the now-unnecessary `Save previous data.js` workflow step and\n`dist/other-repo` checkout from both `ci.yml` (11 jobs) and\n`ci-results-repo.yml` (11 jobs), plus the `before_data.js` CLI arg.\n\n### Test scenario\n\n- [ ] Watch this PR's `CI` and `CI - separate results repo` workflow\nruns; all benchmark jobs pass with the new validate command shape `npx\ntsx scripts/ci_validate_modification.ts '<bench name>' [<dir>]`\n- [ ] After merge, watch the next 10–20 master pushes for the absence of\n\"Number of diffs are incorrect\" failures in `ci-results-repo.yml`\n- [ ] Confirm `ci.yml` jobs still validate correctly (local `gh-pages`\nbranch with `skip-fetch-gh-pages: true` flow unchanged)\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n## Summary by CodeRabbit\n\n* **Chores**\n* Enhanced CI workflows to fetch benchmark baselines before runs and\nvalidate results after runs.\n* Switched validation to use Git-backed comparisons for before/after\nbenchmark data.\n* Added stricter post-run checks (commit/message/author) and more robust\nerror handling/logging.\n* Broadened automatic validation coverage across many benchmark types\nand simplified invocation steps.\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "timestamp": "2026-05-06T15:16:21+02:00",
+          "tree_id": "9c3831464f2c42c0be49706c150f791141a7fdd8",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/86d8bcf4dc945c81ee3547d15499abafc89a57b5"
+        },
+        "date": 1778073464244,
+        "tool": "jmh",
+        "benches": [
+          {
+            "name": "org.openjdk.jmh.samples.JMHSample_01_HelloWorld.wellHelloThere",
+            "value": 1925602672.4764373,
             "unit": "ops/s",
             "extra": "iterations: 3\nforks: 1\nthreads: 1"
           }
