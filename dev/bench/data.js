@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778060902038,
+  "lastUpdate": 1778060912354,
   "entries": {
     "Rust Benchmark": [
       {
@@ -57297,6 +57297,44 @@ window.BENCHMARK_DATA = {
             "range": "± 234.566",
             "unit": "us",
             "extra": "100 samples\n3 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d4f68d16a0cfb82ef5bf01b9a88210900c368b6e",
+          "message": "chore(deps-dev): bump minimatch from 3.1.2 to 3.1.5 (#347)\n\nBumps [minimatch](https://github.com/isaacs/minimatch) from 3.1.2 to\n3.1.5.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/7bba97888a27a6162983056bcce2a6e28f668712\"><code>7bba978</code></a>\n3.1.5</li>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/bd259425b2ca17b42897997f93e890314155522d\"><code>bd25942</code></a>\ndocs: add warning about ReDoS</li>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/1a9c27c75725474dbde57db2995b6281b267756d\"><code>1a9c27c</code></a>\nfix partial matching of globstar patterns</li>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/1a2e084af579731af66c221214e3ca8222c9bf23\"><code>1a2e084</code></a>\n3.1.4</li>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/ae24656237c3d58067442f790ce17eff84463a47\"><code>ae24656</code></a>\nupdate lockfile</li>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/b1003749228b2a79e1f237963a0d559ef7a0941e\"><code>b100374</code></a>\nlimit recursion for **, improve perf considerably</li>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/26ffeaa091b9f660833e23f42e07165b33e85c13\"><code>26ffeaa</code></a>\nlockfile update</li>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/9eca892a4e5dbb20534f9f30483b85cdeee6c2eb\"><code>9eca892</code></a>\nlock node version to 14</li>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/00c323b188b704e5d4bc534ecec2268cfa70a32a\"><code>00c323b</code></a>\n3.1.3</li>\n<li><a\nhref=\"https://github.com/isaacs/minimatch/commit/30486b2048929264f44d18822891cfffa02af78b\"><code>30486b2</code></a>\nupdate CI matrix and actions</li>\n<li>Additional commits viewable in <a\nhref=\"https://github.com/isaacs/minimatch/compare/v3.1.2...v3.1.5\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-05-06T11:47:31+02:00",
+          "tree_id": "c0ba141008af715e3fe7b2dc123fb1892f1853a0",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/d4f68d16a0cfb82ef5bf01b9a88210900c368b6e"
+        },
+        "date": 1778060898416,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 82.2788,
+            "range": "± 4.77321",
+            "unit": "ns",
+            "extra": "100 samples\n365 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 8.38504,
+            "range": "± 1.92829",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
           }
         ]
       }
