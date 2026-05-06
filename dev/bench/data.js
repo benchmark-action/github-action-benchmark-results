@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778061985727,
+  "lastUpdate": 1778062000519,
   "entries": {
     "Rust Benchmark": [
       {
@@ -68326,6 +68326,66 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci/Recursive/21",
             "value": 32318,
             "range": "± 293",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "k.trzesniewski@gmail.com",
+            "name": "Chris Trześniewski",
+            "username": "ktrz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "be6703b74d03447fdc7e72aa8cdee2cf6c4d1b66",
+          "message": "chore: add tracker config and ignore *.local files (#353)\n\n### Description\n\n- Add `.claude/tracker.yaml` declaring this repo as GitHub-tracker so\nClaude skills (plan-feature, create-pr, etc.) can dispatch correctly\nwithout per-invocation configuration. Schema documented in [the skills'\ntracker\nreference](https://github.com/ktrz/skills/blob/main/_shared/references/tracker.md).\n- Add `*.local` and `*.local.*` patterns to `.gitignore` so personal\noverrides like `.claude/settings.local.json` stay out of git.\n\n### Test scenario\n\n- [ ] `git check-ignore -v .claude/settings.local.json` reports\n`.gitignore:*.local.*` as the matching rule.\n- [ ] `cat .claude/tracker.yaml` shows the GitHub-typed config pointing\nat this repo.\n- [ ] No code paths affected — config-only change.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n\n## Summary by CodeRabbit\n\n* **Chores**\n  * Added tracker configuration for GitHub integration.\n* Updated `.gitignore` to exclude local configuration files (*.local and\n*.local.*).\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "timestamp": "2026-05-06T12:04:25+02:00",
+          "tree_id": "e0a6d6f7d9671d87923f3239aa6a8b2e62af91ae",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/be6703b74d03447fdc7e72aa8cdee2cf6c4d1b66"
+        },
+        "date": 1778061993215,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 159,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 20131,
+            "range": "± 67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 20132,
+            "range": "± 1120",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 32568,
+            "range": "± 612",
             "unit": "ns/iter"
           },
           {
