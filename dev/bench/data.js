@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778060469135,
+  "lastUpdate": 1778060484469,
   "entries": {
     "Rust Benchmark": [
       {
@@ -57097,6 +57097,44 @@ window.BENCHMARK_DATA = {
             "range": "± 389.964",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "962496030412810aa8addc05a8c4853a082039de",
+          "message": "chore(deps): bump uuid and @actions/core (#350)\n\nRemoves [uuid](https://github.com/uuidjs/uuid). It's no longer used\nafter updating ancestor dependency\n[@actions/core](https://github.com/actions/toolkit/tree/HEAD/packages/core).\nThese dependencies need to be updated together.\n\nRemoves `uuid`\n\nUpdates `@actions/core` from 1.10.0 to 1.11.1\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/actions/toolkit/blob/main/packages/core/RELEASES.md\">@​actions/core's\nchangelog</a>.</em></p>\n<blockquote>\n<h2>1.11.1</h2>\n<ul>\n<li>Fix uses of <code>crypto.randomUUID</code> on Node 18 and earlier <a\nhref=\"https://redirect.github.com/actions/toolkit/pull/1842\">#1842</a></li>\n</ul>\n<h3>1.11.0</h3>\n<ul>\n<li>Add platform info utilities <a\nhref=\"https://redirect.github.com/actions/toolkit/pull/1551\">#1551</a></li>\n<li>Remove dependency on <code>uuid</code> package <a\nhref=\"https://redirect.github.com/actions/toolkit/pull/1824\">#1824</a></li>\n</ul>\n<h3>1.10.1</h3>\n<ul>\n<li>Fix error message reference in oidc utils <a\nhref=\"https://redirect.github.com/actions/toolkit/pull/1511\">#1511</a></li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li>See full diff in <a\nhref=\"https://github.com/actions/toolkit/commits/HEAD/packages/core\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-05-06T11:39:49+02:00",
+          "tree_id": "127834cc4435587ac9ed9e12c81de36b4a1f8238",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/962496030412810aa8addc05a8c4853a082039de"
+        },
+        "date": 1778060468887,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 82.9217,
+            "range": "± 3.2161",
+            "unit": "ns",
+            "extra": "100 samples\n226 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 8.39639,
+            "range": "± 234.566",
+            "unit": "us",
+            "extra": "100 samples\n3 iterations"
           }
         ]
       }
