@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778057787165,
+  "lastUpdate": 1778057795565,
   "entries": {
     "Rust Benchmark": [
       {
@@ -56375,6 +56375,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 7.6369,
             "range": "± 373.112",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4ee3613e43659a1305065eb9f1b0c6afc14c4320",
+          "message": "chore(deps-dev): bump picomatch from 2.3.0 to 2.3.2 (#342)\n\nBumps [picomatch](https://github.com/micromatch/picomatch) from 2.3.0 to\n2.3.2.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/micromatch/picomatch/releases\">picomatch's\nreleases</a>.</em></p>\n<blockquote>\n<h2>2.3.2</h2>\n<p>This is a security release fixing several security relevant\nissues.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>fix: exception when glob pattern contains constructor by <a\nhref=\"https://github.com/Jason3S\"><code>@​Jason3S</code></a> in <a\nhref=\"https://redirect.github.com/micromatch/picomatch/pull/144\">micromatch/picomatch#144</a></li>\n<li>Fix for <a\nhref=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-c2c7-rcm5-vvqj\">CVE-2026-33671</a></li>\n<li>Fix for <a\nhref=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-3v7f-55p6-f55p\">CVE-2026-33672</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a\nhref=\"https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2\">https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2</a></p>\n<h2>2.3.1</h2>\n<h3>Fixed</h3>\n<ul>\n<li>Fixes bug when a pattern containing an expression after the closing\nparenthesis (<code>/!(*.d).{ts,tsx}</code>) was incorrectly converted to\nregexp (<a\nhref=\"https://github.com/micromatch/picomatch/commit/9f241ef\">9f241ef</a>).</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Some documentation improvements (<a\nhref=\"https://github.com/micromatch/picomatch/commit/f81d236\">f81d236</a>,\n<a\nhref=\"https://github.com/micromatch/picomatch/commit/421e0e7\">421e0e7</a>).</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/micromatch/picomatch/blob/master/CHANGELOG.md\">picomatch's\nchangelog</a>.</em></p>\n<blockquote>\n<h1>Release history</h1>\n<p><strong>All notable changes to this project will be documented in\nthis file.</strong></p>\n<p>The format is based on <a\nhref=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>\nand this project adheres to <a\nhref=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<!-- raw HTML omitted -->\n<ul>\n<li>Changelogs are for humans, not machines.</li>\n<li>There should be an entry for every single version.</li>\n<li>The same types of changes should be grouped.</li>\n<li>Versions and sections should be linkable.</li>\n<li>The latest version comes first.</li>\n<li>The release date of each versions is displayed.</li>\n<li>Mention whether you follow Semantic Versioning.</li>\n</ul>\n<!-- raw HTML omitted -->\n<!-- raw HTML omitted -->\n<p>Changelog entries are classified using the following labels <em>(from\n<a href=\"http://keepachangelog.com/\">keep-a-changelog</a></em>):</p>\n<ul>\n<li><code>Added</code> for new features.</li>\n<li><code>Changed</code> for changes in existing functionality.</li>\n<li><code>Deprecated</code> for soon-to-be removed features.</li>\n<li><code>Removed</code> for now removed features.</li>\n<li><code>Fixed</code> for any bug fixes.</li>\n<li><code>Security</code> in case of vulnerabilities.</li>\n</ul>\n<!-- raw HTML omitted -->\n<h2>4.0.0 (2024-02-07)</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Fix bad text values in parse <a\nhref=\"https://redirect.github.com/micromatch/picomatch/issues/126\">#126</a>,\nthanks to <a\nhref=\"https://github.com/connor4312\"><code>@​connor4312</code></a></li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Remove process global to work outside of node <a\nhref=\"https://redirect.github.com/micromatch/picomatch/issues/129\">#129</a>,\nthanks to <a\nhref=\"https://github.com/styfle\"><code>@​styfle</code></a></li>\n<li>Add sideEffects to package.json <a\nhref=\"https://redirect.github.com/micromatch/picomatch/issues/128\">#128</a>,\nthanks to <a\nhref=\"https://github.com/frandiox\"><code>@​frandiox</code></a></li>\n<li>Removed <code>os</code>, make compatible browser environment. See <a\nhref=\"https://redirect.github.com/micromatch/picomatch/issues/124\">#124</a>,\nthanks to <a\nhref=\"https://github.com/gwsbhqt\"><code>@​gwsbhqt</code></a></li>\n</ul>\n<h2>3.0.1</h2>\n<h3>Fixes</h3>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/81cba8d4b767cab3cb29d26eb4f691eed75b73b2\"><code>81cba8d</code></a>\nPublish 2.3.2</li>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/fc1f6b69006e9435caf8fb40d8aff378bc0b7bce\"><code>fc1f6b6</code></a>\nMerge commit from fork</li>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/eec17aee5428a7249e9ca5adbb8a0d28fa29619b\"><code>eec17ae</code></a>\nMerge commit from fork</li>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/78f8ca4362d9e66cadea97b93e292f10096452ed\"><code>78f8ca4</code></a>\nMerge pull request <a\nhref=\"https://redirect.github.com/micromatch/picomatch/issues/156\">#156</a>\nfrom micromatch/backport-144</li>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/3f4f10eaa65bf3a52e8f2999674cd27e11fa3c9b\"><code>3f4f10e</code></a>\nMerge pull request <a\nhref=\"https://redirect.github.com/micromatch/picomatch/issues/144\">#144</a>\nfrom Jason3S/jdent-object-properties</li>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/5467a5a9638472610de4f30709991b9a56bb5613\"><code>5467a5a</code></a>\n2.3.1</li>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/9f241efedc15a21bcec1edafd43ee773ceb4bc35\"><code>9f241ef</code></a>\nMerge pull request <a\nhref=\"https://redirect.github.com/micromatch/picomatch/issues/102\">#102</a>\nfrom micromatch/ISSUE-93_incorrect_extglob_expanding</li>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/ac3cb660ca76764627aa825676df59378dd60bcd\"><code>ac3cb66</code></a>\nfix: support stars in negation extglobs with expression after closing\nparenth...</li>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/719d348d8a01cf23c6c10568191c1ad5a3fc33e3\"><code>719d348</code></a>\nMerge pull request <a\nhref=\"https://redirect.github.com/micromatch/picomatch/issues/85\">#85</a>\nfrom XhmikosR/codeql</li>\n<li><a\nhref=\"https://github.com/micromatch/picomatch/commit/ac74e57b38a0d16de8e1752a62003e49c1622cec\"><code>ac74e57</code></a>\nMerge pull request <a\nhref=\"https://redirect.github.com/micromatch/picomatch/issues/91\">#91</a>\nfrom XhmikosR/patch-1</li>\n<li>Additional commits viewable in <a\nhref=\"https://github.com/micromatch/picomatch/compare/2.3.0...2.3.2\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-05-06T10:55:30+02:00",
+          "tree_id": "4dd3536ace3db74978354f2c14b7c34130a11fb4",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/4ee3613e43659a1305065eb9f1b0c6afc14c4320"
+        },
+        "date": 1778057770834,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 86.5582,
+            "range": "± 4.22816",
+            "unit": "ns",
+            "extra": "100 samples\n360 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 8.03392,
+            "range": "± 384.227",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
           }
