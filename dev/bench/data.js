@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778063202392,
+  "lastUpdate": 1778063210285,
   "entries": {
     "Rust Benchmark": [
       {
@@ -66445,6 +66445,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "org.openjdk.jmh.samples.JMHSample_01_HelloWorld.wellHelloThere",
             "value": 1934270144.4336708,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "k.trzesniewski@gmail.com",
+            "name": "Chris Trześniewski",
+            "username": "ktrz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "496ae8b0184c640162c40b315d3ad1a33b65e213",
+          "message": "fix(build): scope tsconfig.build.json to src/ for reproducibility (#352)\n\n### Ticket\n\n\n[#351](https://github.com/benchmark-action/github-action-benchmark/issues/351)\n— `tsconfig.build.json` compiles `scripts/` into `dist/` but release\nworkflow excludes them — rebuild reproducibility breaks\n\n### Description\n\n- `tsconfig.build.json` previously used `\"include\": [\"**/*.ts\"]`, which\ncompiled `scripts/ci_validate_modification.ts` into `dist/scripts/`. The\nrelease workflow (`scripts/prepare-release.sh`) only copies `dist/src/`\nto the release tag, so anyone rebuilding from source got an extra\n`dist/scripts/ci_validate_modification.js` not present in the published\nartifact — failing the Apache Software Foundation's\n`verify-action-build` reproducibility checker.\n- Tightened `include` to `[\"src/**/*.ts\"]` so `npm run build` no longer\nemits `dist/scripts/`. Set `\"rootDir\": \".\"` explicitly so `src/index.ts`\ncontinues to emit to `dist/src/index.js` (without `rootDir`, narrowing\nthe include set lets TypeScript infer `src/` as the common root and emit\nflat under `dist/`, breaking the release script's `dist/src/` layout).\n- CI still needs to run `scripts/ci_validate_modification.ts`. Switched\nboth `.github/workflows/ci.yml` and\n`.github/workflows/ci-results-repo.yml` from `node\n./dist/scripts/ci_validate_modification.js …` to `npx tsx\nscripts/ci_validate_modification.ts …` (22 occurrences total). Added\n`tsx` to `devDependencies`.\n\nFixes #351.\n\n### Test scenario\n\n- [ ] `rm -rf dist && npm run build` — verify `dist/` contains only\n`src/` (no `dist/scripts/`).\n- [ ] `ls dist/src/index.js` — verify the release-shaped layout is\npreserved.\n- [ ] `npx tsx scripts/ci_validate_modification.ts` (no args) — verify\nthe script runs and exits non-zero with its usage error (proves CI\ninvocation works).\n- [ ] `npm test` and `npm run lint` — verify no regressions.\n- [ ] CI green on this PR — confirms the `tsx`-driven validation step\nstill works across all benchmark jobs.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n\n## Summary by CodeRabbit\n\n* **Chores**\n* Updated CI/CD workflows to improve build reliability and consistency.\n  * Added development tooling dependency for enhanced script execution.\n  * Refined build configuration to streamline the compilation process.\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "timestamp": "2026-05-06T12:25:26+02:00",
+          "tree_id": "6b2a3e8691849f0777e93ad247190bcb692b703a",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/496ae8b0184c640162c40b315d3ad1a33b65e213"
+        },
+        "date": 1778063198510,
+        "tool": "jmh",
+        "benches": [
+          {
+            "name": "org.openjdk.jmh.samples.JMHSample_01_HelloWorld.wellHelloThere",
+            "value": 1921215877.9461975,
             "unit": "ops/s",
             "extra": "iterations: 3\nforks: 1\nthreads: 1"
           }
