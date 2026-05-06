@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778057889616,
+  "lastUpdate": 1778057900721,
   "entries": {
     "Rust Benchmark": [
       {
@@ -67573,6 +67573,44 @@ window.BENCHMARK_DATA = {
             "range": "± 352.558",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "986b555cfb08d419771e63bbeda383b36ddf50a2",
+          "message": "chore(deps): bump js-yaml (#344)\n\nBumps and [js-yaml](https://github.com/nodeca/js-yaml). These\ndependencies needed to be updated together.\nUpdates `js-yaml` from 4.1.0 to 4.1.1\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md\">js-yaml's\nchangelog</a>.</em></p>\n<blockquote>\n<h2>[4.1.1] - 2025-11-12</h2>\n<h3>Security</h3>\n<ul>\n<li>Fix prototype pollution issue in yaml merge (&lt;&lt;)\noperator.</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/cc482e775913e6625137572a3712d2826170e53a\"><code>cc482e7</code></a>\n4.1.1 released</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/50968b862e75866ef90e626572fe0b2f97b55f9f\"><code>50968b8</code></a>\ndist rebuild</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/d092d866031751cb27c12d93f3e2470ad74d678b\"><code>d092d86</code></a>\nlint fix</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/383665ff4248ec2192d1274e934462bb30426879\"><code>383665f</code></a>\nfix prototype pollution in merge (&lt;&lt;)</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/0d3ca7a27b03a6c974790a30a89e456007d62976\"><code>0d3ca7a</code></a>\nREADME.md: HTTP =&gt; HTTPS (<a\nhref=\"https://redirect.github.com/nodeca/js-yaml/issues/678\">#678</a>)</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/49baadd52af887d2991e2c39a6639baa56d6c71b\"><code>49baadd</code></a>\ndoc: 'empty' style option for !!null</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/ba3460eb9d3e4478edcbc29edabe17c2157fc9ce\"><code>ba3460e</code></a>\nFix demo link (<a\nhref=\"https://redirect.github.com/nodeca/js-yaml/issues/618\">#618</a>)</li>\n<li>See full diff in <a\nhref=\"https://github.com/nodeca/js-yaml/compare/4.1.0...4.1.1\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `js-yaml` from 3.14.1 to 3.14.2\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md\">js-yaml's\nchangelog</a>.</em></p>\n<blockquote>\n<h2>[4.1.1] - 2025-11-12</h2>\n<h3>Security</h3>\n<ul>\n<li>Fix prototype pollution issue in yaml merge (&lt;&lt;)\noperator.</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/cc482e775913e6625137572a3712d2826170e53a\"><code>cc482e7</code></a>\n4.1.1 released</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/50968b862e75866ef90e626572fe0b2f97b55f9f\"><code>50968b8</code></a>\ndist rebuild</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/d092d866031751cb27c12d93f3e2470ad74d678b\"><code>d092d86</code></a>\nlint fix</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/383665ff4248ec2192d1274e934462bb30426879\"><code>383665f</code></a>\nfix prototype pollution in merge (&lt;&lt;)</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/0d3ca7a27b03a6c974790a30a89e456007d62976\"><code>0d3ca7a</code></a>\nREADME.md: HTTP =&gt; HTTPS (<a\nhref=\"https://redirect.github.com/nodeca/js-yaml/issues/678\">#678</a>)</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/49baadd52af887d2991e2c39a6639baa56d6c71b\"><code>49baadd</code></a>\ndoc: 'empty' style option for !!null</li>\n<li><a\nhref=\"https://github.com/nodeca/js-yaml/commit/ba3460eb9d3e4478edcbc29edabe17c2157fc9ce\"><code>ba3460e</code></a>\nFix demo link (<a\nhref=\"https://redirect.github.com/nodeca/js-yaml/issues/618\">#618</a>)</li>\n<li>See full diff in <a\nhref=\"https://github.com/nodeca/js-yaml/compare/4.1.0...4.1.1\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\n\nYou can trigger a rebase of this PR by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits\nthat have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all\nof the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop\nDependabot creating any more for this major version (unless you reopen\nthe PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop\nDependabot creating any more for this minor version (unless you reopen\nthe PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop\nDependabot creating any more for this dependency (unless you reopen the\nPR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the\n[Security Alerts\npage](https://github.com/benchmark-action/github-action-benchmark/network/alerts).\n\n</details>\n\n> **Note**\n> Automatic rebases have been disabled on this pull request as it has\nbeen open for over 30 days.\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-05-06T10:55:48+02:00",
+          "tree_id": "f1955112952d3f13ee7929d2f4bc2de9821714df",
+          "url": "https://github.com/benchmark-action/github-action-benchmark/commit/986b555cfb08d419771e63bbeda383b36ddf50a2"
+        },
+        "date": 1778057895447,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 89.4007,
+            "range": "± 3.57706",
+            "unit": "ns",
+            "extra": "100 samples\n224 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 8.41438,
+            "range": "± 339.591",
+            "unit": "us",
+            "extra": "100 samples\n3 iterations"
           }
         ]
       }
